@@ -1,9 +1,19 @@
-import './App.css';
+import HeaderBlock from 'src/components/HeaderBlock';
+import Main from 'components/Main';
+import Footer from 'components/Footer';
+import './App.scss';
+import Wrapper from 'src/components/Wrapper';
 
-function App() {
+//Wrapper width: 1050px;
+
+function App():JSX.Element {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <HeaderBlock/>
+      <Wrapper>
+        <Main/>
+        <Footer/>
+      </Wrapper>
     </div>
   );
 }
